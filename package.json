@@ -1,0 +1,41 @@
+{
+  "name": "react-starter",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "Ookla react migration plan PoC",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline --watch"
+  },
+  "author": "Per Nilsson <per@sproutlab.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "history": "^2.0.0-rc2",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^2.0.0-rc5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coopy/react-starter.git"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "jsx",
+    "react-router"
+  ],
+  "bugs": {
+    "url": "https://github.com/coopy/react-starter/issues"
+  },
+  "homepage": "https://github.com/coopy/react-starter#readme"
+}
