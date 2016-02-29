@@ -1,14 +1,8 @@
-React Starter Kit
+React / Backbone Proptotyping
 =================
 
-Contains
---------
-
-- Webpack
-- Babel
-- React with JSX
-- ReactRouter
-- Example routes and app layout
+This repo has experimental / prototypes of Backbone Marionnete / React Interactions.
+Based on @coopy's React Starter.
 
 To Run
 ------
@@ -19,7 +13,7 @@ $ npm start
 $ open http://localhost:8080
 ```
 
-That's it!
+Current Status
 ----------
 
-Look out for `react-starter-redux` – coming to a repo near you soon.
+`main.js` is a Marionnete `LayoutView` which upon initial rendering calls `ReactDOM.render(<Toggle />)`
