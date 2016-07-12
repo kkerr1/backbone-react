@@ -6,9 +6,28 @@
 - Pass state into React Components as props that could be used in any system
 - Use handler functions to handle state changes
 - Don't write any Backbone / DOM tomfoolery inside a React component
-- Wrap ReactDOM.render() call in a function. It will be your responsibility to make sure this get's called whenever it should.
 - Backbone can know about React
+- Wrap ReactDOM.render() call in a function. It will be your responsibility to make sure this get's called whenever it should.
 
+```
+export default ItemView.extend({
+...
+
+  renderReactToggle() {
+    const toggleRegion = this.el.querySelector('#compare-toggles-region');
+    ReactDOM.render(
+      <CompareToggles
+        providerType = {this.state.providerType}
+        updateToggle = {this.updateToggle.bind(this)}
+      />, toggleRegion);
+  },
+  
+  updateToggle(providerType) {
+    this.state.providerType = providerType;
+    this.renderReactToggle();
+  }
+}
+```
 ## Wrapping the Redux Provider in a Backbone View
 We have the luxury of focusing on the Backbone-React, conversion page by page. We can keep the existing Backbone router around while focusing on page rewrites. To do this we created the following wrapper.
 
