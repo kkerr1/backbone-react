@@ -2,9 +2,9 @@
 
 ## React Components in Backbone Views
 ### React should know NOTHING about Backbone
-- No Model listeners/Methods. 
+- No Model listeners / no Backbone API calls. 
 - Pass state into React Components as props that could be used in any system
-- Use generic functions to handle state changes
+- Use handler functions to handle state changes
 - Don't write any Backbone / DOM tomfoolery inside a React component
 - Wrap ReactDOM.render() call in a function. It will be your responsibility to make sure this get's called whenever it should.
 - Backbone can know about React
